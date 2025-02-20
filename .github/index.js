@@ -1,9 +1,11 @@
 function validatePassword(string1, string2){
   const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   const lowercase = "abcdefghijklmnopqrstuvwxyz";
-  const numbers ="0123456789";
+  const numbers = "0123456789";
 
-  let numCount =0, uppercaseCount =0, lowercaseCount =0;
+  var numCount =0;
+  var uppercaseCount =0;
+  var lowercaseCount =0;
 
   if (string1 === string2){
     if (string1.length >= 8){
@@ -18,7 +20,7 @@ function validatePassword(string1, string2){
           }
 
           if(numbers.includes(char)){
-            numCount++
+            numCount++;
           }
       }
     }
@@ -32,3 +34,15 @@ function validatePassword(string1, string2){
 
 // var checker = validatePassword("helloworld", "hello");
 // console.log(checker);
+
+function reverseString(string1){
+  let len = string1.length;
+  let reversedString ="";
+
+  for (let i= len-1 ; i>0 ; i--){
+      reversedString += string1[i];
+  }
+
+  return reversedString;
+}
+
