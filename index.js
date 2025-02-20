@@ -78,3 +78,5 @@ function storePassword (name, pass1,pass2){
 //test cases for storePassword 
 console.log(storePassword("John", "Pass12345", "Pass12345"))
 console.log(storePassword("John", "Pass12345", "Pass1234"))
+console.log(storePassword("Athalia", "hello World12", "hello World12"))
+console.log(storePassword("Athalia", "helloWorld11", "helloWorld12"))
