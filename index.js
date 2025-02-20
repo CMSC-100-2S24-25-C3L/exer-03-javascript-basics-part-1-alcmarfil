@@ -32,17 +32,41 @@ function validatePassword(string1, string2){
   return false;
 }
 
-// var checker = validatePassword("helloworld", "hello");
+// var checker = validatePassword("Helloworld1", "Helloworld1");
 // console.log(checker);
 
 function reverseString(string1){
   let len = string1.length;
   let reversedString ="";
 
-  for (let i= len-1 ; i>0 ; i--){
+  for (let i= len-1 ; i>=0 ; i--){
       reversedString += string1[i];
   }
 
   return reversedString;
 }
 
+function storePassword (name, pass1,pass2){
+  let newpass = "";
+  if (validatePassword(pass1, pass2) == true){
+    newpass = reverseString(pass1);
+  } else {
+    newpass = pass1;
+  }
+
+  const information = {
+    name: name,
+    newPassword : newpass
+  }
+
+
+  return information;
+}
+
+console.log(validatePassword("hello", "hello"))
+console.log(validatePassword("Hello1234", "Hello1234"))
+console.log(validatePassword("HELLO1234", "HELLO1234"))
+console.log(validatePassword("HELLO1234", "HELLO 1234"))
+
+console.log(storePassword("John", "Pass12345", "Pass12345"))
+console.log(storePassword("John", "Pass12345", "Pass1234"))
