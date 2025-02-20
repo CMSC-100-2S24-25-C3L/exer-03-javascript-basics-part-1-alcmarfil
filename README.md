@@ -1,1 +1,12 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/si3U9_eK)
+* Full Name : Athalia Lexine C. Marfil
+* Degree Program: BS Computer Science 
+
+
+* What are your key takeaways from this exercise?
+- I learned that coding in Javascript is somehow similar in coding in C.
+- There are different types on declaring variables which is let, var, and const. They differ from their scope. 
+
+
+* References: 
+- for includes() function
+https://www.w3schools.com/js/js_string_search.asp
